@@ -7,7 +7,6 @@ To generate a PWM wave at the timer pin output and  simuate it on  proteus using
 STM32 CUBE IDE, Proteus 8 simulator .
 
 ### Theory:
-
 The timer modules can operate a variety of modes one of which is the PWM mode. Where the timer gets clocked froam an internal source and counts up to the auto-reload register value, then the output channel pin is driven HIGH. And it remains until the timer counts reach the CCRx register value, the match event causes the output channel pin to be driven LOW. And it remains until the timer counts up to the auto-reload register value, and so on.
 
 The resulting waveform is called PWM (pulse-width modulated) signal. Whose frequency is determined by the internal clock, the Prescaler, and the ARRx register. And its duty cycle is defined by the channel CCRx register value. The PWM doesn’t always have to be following this exact same procedure for PWM generation, however, it’s the very basic one and the easier to understand the concept. It’s called the up-counting PWM mode. We’ll discuss further advanced PWM generation techniques as we go on in this series of tutorials.
